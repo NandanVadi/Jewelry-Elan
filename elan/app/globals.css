@@ -1,0 +1,10 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+html{background:#F4F1EA;color:#111}body{font-family:var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.d{font-family:var(--display);text-transform:uppercase;line-height:.88;letter-spacing:-.005em}
+.lb{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600}
+.grain:before{content:'';position:absolute;inset:0;z-index:1;pointer-events:none;opacity:.12;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.8'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+@keyframes mq{to{transform:translateX(-50%)}}.mq{animation:mq 28s linear infinite}
+@keyframes kb{from{transform:scale(1)}to{transform:scale(1.12) translateX(-2%)}}.kb{animation:kb 18s ease-in-out infinite alternate}
+:focus-visible{outline:2px solid #C8FF2E;outline-offset:3px;box-shadow:0 0 0 4px #111}
+::-webkit-scrollbar{display:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}@media (hover:none){.cur{display:none}}
